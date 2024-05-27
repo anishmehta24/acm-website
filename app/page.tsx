@@ -3,7 +3,7 @@ import NavBar from "@/components/ui/NavBar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-20 p-8">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <NavBar />
       <section className="w-full mt-16">
         {/* Bars for shiny background gradient */}
@@ -25,7 +25,7 @@ export default function Home() {
         {/* Hero */}
         <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
           <div className="flex w-full mx-auto text-left">
-            <div className="relative inline-flex items-center mx-auto align-middle">
+            <div className="relative inline-flex items-center mx-auto align-middle py-4">
               <div className="text-center flex flex-col gap-24">
                 <h1 className="max-w-5xl text-2xl leading-none md:text-5xl lg:text-8xl lg:max-w-7xl">
                   ACM <br className="hidden lg:block lg:my-4" />
