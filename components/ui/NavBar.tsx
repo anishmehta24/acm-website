@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${(scrolled || isSmallScreen) ? 'bg-gray-900 py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4 flex items-center justify-between"> {/* Added px-4 for padding */}
+      <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <Image src={"/acm_chapter_logo.jpg"}
            alt="Logo" 
