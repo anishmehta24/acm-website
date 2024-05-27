@@ -1,9 +1,11 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import NavBar from "@/components/ui/NavBar";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <NavBar/>
       <section className="w-full">
         {/* Bars for shiny background gradient */}
         <div className="absolute left-0 top-0 z-[-1] size-full">
