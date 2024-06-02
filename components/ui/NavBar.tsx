@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -23,14 +24,14 @@ const NavBar: React.FC = () => {
   return (
     <nav className={`w-full fixed top-0 z-50 transition-all duration-300 ${scroll ? 'bg-gray-900 py-2': 'bg-transparent py-4 '}`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 w-full">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
           src="/acm_chapter_logo.jpg"
           alt="Logo" 
           width={100} 
           height={50}/>
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ACM Student Chapter</span>
-        </a>
+        </Link>
         <button
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -68,7 +69,7 @@ const NavBar: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#connect" className="font-bold text-white border border-white py-2 px-8 text-lg relative bg-transparent transition-all duration-300 hover:text-gray-900 hover:bg-white mt-2 md:mt-0"> Let's Connect </a>
+              <a href="#connect" className="font-bold text-white border border-white py-2 px-8 text-lg relative bg-transparent transition-all duration-300 hover:text-gray-900 hover:bg-white mt-2 md:mt-0"> Let&apos;s Connect </a>
             </li>
           </ul>
         </div>
