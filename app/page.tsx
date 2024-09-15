@@ -3,7 +3,7 @@ import NavBar from "@/components/ui/NavBar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-[url('/ACMBACKGROUND.jpg')] bg-cover bg-center">
       <NavBar />
       <section className="w-full mt-16">
         {/* Bars for shiny background gradient */}
@@ -33,7 +33,7 @@ export default function Home() {
                 </h1>
                 <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                   <Button
-                    link="#"
+                    link="link"
                     className="border-2 border-white border-solid"
                   >
                     Join Us
