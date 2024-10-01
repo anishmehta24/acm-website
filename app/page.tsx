@@ -1,9 +1,12 @@
 import Button from "@/components/ui/Button";
 import NavBar from "@/components/ui/NavBar";
+import AboutUs from "./_components/AboutUs";
+import ContactUs from "./_components/ContactUs";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-[url('/ACMBACKGROUND.jpg')] bg-cover bg-center">
+    <div>
+    <div className="flex min-h-screen flex-col items-center justify-between bg-[url('/ACMBACKGROUND.jpg')] bg-cover bg-center">
       <NavBar />
       <section className="w-full mt-16">
         {/* Bars for shiny background gradient */}
@@ -46,7 +49,18 @@ export default function Home() {
       </section>
       <section id="home-content" className="w-full">
         {/* Additional Content Here */}
+
+       
       </section>
-    </main>
+    </div>
+
+
+
+      <div className="bg-[url('/background_image.png')] bg-cover bg-center min-h-screen">
+        <div id="about"><AboutUs /></div>
+        <div id="contact"><ContactUs /></div>
+
+      </div>
+    </div>
   );
 }
