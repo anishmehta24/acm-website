@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("overflow-x-hidden scroll-smooth antialiased uppercase", font.className)}>{children}</body>
+      <body className={cn("overflow-x-hidden scroll-smooth antialiased ", font.className)}>{children}</body>
     </html>
   );
 }
