@@ -2,6 +2,9 @@ import Button from "@/components/ui/Button";
 import NavBar from "@/components/ui/NavBar";
 import AboutUs from "./_components/AboutUs";
 import ContactUs from "./_components/ContactUs";
+import Event from "./_components/Event";
+import CustomMarquee from "./_components/Marquee";
+import TeamMarquee from "./_components/Teams";
 
 export default function Home() {
   return (
@@ -57,7 +60,11 @@ export default function Home() {
 
 
       <div className="bg-[url('/background_image.png')] bg-cover bg-center min-h-screen">
+
+        <div ><CustomMarquee /></div>
+        <div id="event"><Event /></div>
         <div id="about"><AboutUs /></div>
+        <div ><TeamMarquee /></div>
         <div id="contact"><ContactUs /></div>
 
       </div>

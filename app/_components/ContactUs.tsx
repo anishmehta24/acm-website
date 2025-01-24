@@ -3,7 +3,7 @@ import React from 'react';
 
 function ContactUs() {
   return (
-    <div className=" flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className=" flex items-center justify-center py-12 px-4 mt-28 sm:px-6 lg:px-8">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section */}
         <div className="bg-[#3C3967] p-8 rounded-lg">

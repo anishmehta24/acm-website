@@ -9,11 +9,17 @@ function AboutUs() {
     <div className=" py-16 px-8 ">
       {/* ABOUT US heading outside the content box */}
       <div className="flex justify-center mb-8">
-        <h1 className="text-4xl font-bold text-white">ABOUT US</h1>
+      <div className="flex-1 h-px bg-gray-500 mx-4"></div>
+        <h1 className="text-8xl text-white text-center mb-10"
+            style={{
+              letterSpacing: "0.2em",
+              fontWeight: "300",
+            }}>ABOUT US</h1>
+            <div className="flex-1 h-px bg-gray-500 mx-4"></div>
       </div>
 
       {/* Content box */}
-      <div className="bg-[#1A182E] text-white p-8 rounded-3xl max-w-7xl ml-40 mt-10 mb-16">
+      <div className="bg-[#1A182E] text-white p-8 rounded-3xl max-w-7xl ml-24 mt-10 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Section */}
           <div>
